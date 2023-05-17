@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.Launch-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg-stars.svg),linear-gradient( hsl(235, 16%, 14%),hsl(234, 17%, 12%));
+    position: relative;
+    z-index: 0;
+}
+
+
+.Launch-container .launch-container-wrapper {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.launch-container-wrapper .launch-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:8rem;
+    text-align: center;
+}
+
+.launch-container-wrapper .launch-content h1{
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+.launch-container-wrapper .launch-content .time-wrapper{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+.time-wrapper .time-container{
+    max-width: 120px;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0 1rem;
+}
+
+.time-container .days-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background:linear-gradient(hsl(235, 14%, 27%) 50% ,hsl(235, 20%, 39%) 50%) ;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 3px  rgba(0,0,0,0.33);
+    z-index: 44;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.time-container .days-content::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left:-12px;
+    top:44%;
+    border-radius:50%;
+    background-color: hsl(234, 17%, 12%);
+}
+
+.time-container .days-content::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right:-12px;
+    top:44%;
+    border-radius:50%;
+    background-color: hsl(234, 17%, 12%)
+}
+.time-container p{
+    font-size: 0.8rem;
+    padding:20px 0;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: hsl(236, 15%, 46%);
+    z-index: 44;
+
+}
+
+
+.time-container .days-content h1{
+    font-size: 4rem;
+    color:hsl(345, 95%, 68%);
+    padding:20px;
+}
+
+
+.Launch-container .footer{
+    position: absolute;
+    bottom:0;
+    background: url("/images/pattern-hills.svg") no-repeat ;
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+
+
+
+
+
+.Launch-container .footer a  img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+
+.Launch-container .footer  a:hover img{
+    background: hsl(345, 95%, 68%);
+   
+}
+
+
+
+
+@media screen and (max-width:660px){
+    .time-wrapper .time-container{
+        max-width: 87px;
+        height: 8rem;
+    }
+
+    .time-container .days-content h1{
+        font-size: 4rem;
+    }
+
+    .time-container p{
+        font-size: 0.5rem;
+
+    }
+
+    .launch-container-wrapper .launch-content .time-wrapper{
+        gap:0.2rem;
+
+    }
+}
+
+
+
+
+@media screen and (max-width:486px){
+    .time-wrapper .time-container{
+        max-width: 73px;
+        
+
+    }
+
+    .time-container .days-content h1{
+        font-size: 1.5rem;
+    }
+
+    .launch-container-wrapper .launch-content .time-wrapper{
+        gap:0.5rem;
+
+    }
+
+
+    .time-container .days-content::before{
+        left:0;
+        width: 8px;
+        height: 8px;
+    
+    }
+
+    .time-container .days-content::after{
+        width: 8px;
+        height: 8px;
+        right:0;
+    }
+
+
+}
+
+@media screen and (max-width:446px){
+
+    .time-wrapper .time-container{
+        max-width: 60px;
+        height: 6rem;
+        padding: 0 10px;
+    }
+
+    .time-container .days-content h1{
+        font-size: 1.5rem;
+    }
+
+
+    .time-container .days-content::before{
+        left:-2px;
+        width: 8px;
+        height: 8px;
+    
+    }
+
+    .time-container .days-content::after{
+        width: 8px;
+        height: 8px;
+        right:-2px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    .time-wrapper .time-container{
+        max-width: 50px;
+        height: 6rem;
+
+    }
+
+    .time-container .days-content h1{
+        font-size: 1.5rem;
+    }
+
+
+    .time-container .days-content::before{
+        left:-2px;
+        width: 8px;
+        height: 8px;
+    
+    }
+
+    .time-container .days-content::after{
+        width: 8px;
+        height: 8px;
+        right:-2px;
+    }
+    
+    .Launch-container .launch-container-wrapper {
+        height: 80vh;
+    }
+
+}
+
+
+@media screen and (max-width:300px){
+
+    .time-wrapper .time-container{
+        max-width: 40px;
+        height: 6rem;
+    }
+    .time-container .days-content h1{
+        font-size: 1rem;
+    }
+    .time-container p{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+
+    .Launch-container .launch-container-wrapper {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width:300px){
+    .time-container p{
+        font-size: 6px;
+       
+    }
+
+}
