@@ -117,7 +117,7 @@
 .Launch-container .footer{
     position: absolute;
     bottom:0;
-    background: url("/images/pattern-hills.svg") no-repeat ;
+    background: url("images/pattern-hills.svg") no-repeat ;
     background-size: cover;
     height: 25vh;
     width: 100%;
@@ -125,6 +125,7 @@
     align-items: center;
     justify-content: center;
     gap:2rem;
+    z-index: 99;
 }
 
 
