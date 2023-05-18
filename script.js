@@ -11,7 +11,7 @@ var hours=minutes*60;
 var days=hours*24;
 
 
-var countdown= new Date('AUG 1 ,2023 00:00:00').getTime()
+var countdown= new Date('Aug 1 ,2023 00:00:00').getTime()
 
 
 
